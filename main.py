@@ -2,10 +2,10 @@ import os
 from random import randint
 from datetime import datetime, timedelta
 
-start_date = datetime(2023, 3, 18)  # Starting date in April
-end_date = datetime(2023, 3, 25)    # Ending date in May
+start_date = datetime(2023, 2, 1)  # Starting date in April
+end_date = datetime(2023, 3, 1)    # Ending date in May
 
-for i in range(1, 5):
+for i in range(1, 10):
     for j in range(0, randint(1, 10)):
         random_days = randint(0, (end_date - start_date).days)
         random_date = start_date + timedelta(days=random_days)
